@@ -100,10 +100,10 @@
   </head>
 
   <body>
-    <div class="top-header">
-      <h1 class="name">Nina Carducci</h1>
-      <div class="nav">
-        <ul>
+    <header id="header">
+      <nav class="top-header">
+        <h1 class="name">Nina Carducci</h1>
+        <ul class="nav">
           <li><a href="#about">À propos</a></li>
           <li><a href="#gallery">Galerie</a></li>
           <li><a href="#services">Service</a></li>
@@ -119,9 +119,7 @@
             /></a>
           </li>
         </ul>
-      </div>
-    </div>
-    <div id="header">
+      </nav>
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -205,6 +203,7 @@
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
+          aria-label="Image précédente"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -214,293 +213,301 @@
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
+          aria-label="Image suivante"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
-    <div id="about">
-      <div class="picture left">
-        <img
-          src="./assets/images/nina-photo/nina-560.webp"
-          srcset="
-            ./assets/images/nina-photo/nina-256.webp   256w,
-            ./assets/images/nina-photo/nina-560.webp   560w,
-            ./assets/images/nina-photo/nina-890.webp   890w,
-            ./assets/images/nina-photo/nina-1120.webp 1120w
-          "
-          sizes="(max-width: 1280px) 347px, 347px"
-          alt="Photo de Nina Carducci"
-          loading="lazy"
-        />
-      </div>
-      <div id="about-me">
-        <h2 class="about-me__title">A propos de moi</h2>
-        <p class="about-me__introduction">
-          Devenir photographe était pour moi une évidence. Comme si j’y étais
-          prédestiné. Saisir un moment, une émotion, une situation, un endroit,
-          une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </p>
-        <p>
-          Nous passons notre vie à chercher le bonheur, et lorsque nous y
-          touchons, nous n’avons qu’une envie : le figer au travers de
-          photographies pour le savourer avec les personnes qui sont importantes
-          à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous
-          propose : saisir ces merveilleux moments au travers de mon regard, mon
-          approche, ma technique. Rendre ces moments immortels, afin que vous
-          puissiez y puiser de l’amour, du bonheur, de la tendresse et de
-          lumière à chaque fois que vous poserez les yeux sur vos photos.
-        </p>
-      </div>
-    </div>
-    <div id="gallery">
-      <h2 class="title">Portfolio</h2>
-      <div class="container py-3">
-        <div class="gallery" style="display: none">
+    </header>
+    <main aria-label="À propos">
+      <section id="about">
+        <div class="picture left">
           <img
-            data-gallery-tag="Concert"
-            class="gallery-item"
-            src="./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-448.webp"
+            src="./assets/images/nina-photo/nina-560.webp"
             srcset="
-              ./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-224.webp   224w,
-              ./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-448.webp   448w,
-              ./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-608.webp   608w,
-              ./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-728.webp   728w,
-              ./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-848.webp   848w,
-              ./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-1090.webp 1090w
+              ./assets/images/nina-photo/nina-256.webp   256w,
+              ./assets/images/nina-photo/nina-560.webp   560w,
+              ./assets/images/nina-photo/nina-890.webp   890w,
+              ./assets/images/nina-photo/nina-1120.webp 1120w
             "
-            sizes="(max-width: 1280px) 364px, 364px"
-            alt="Photo d'une salle de concert"
-            loading="lazy"
-          />
-          <img
-            data-gallery-tag="Entreprises"
-            class="gallery-item"
-            src="./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-448.webp"
-            srcset="
-              ./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-224.webp   224w,
-              ./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-448.webp   448w,
-              ./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-608.webp   608w,
-              ./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-728.webp   728w,
-              ./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-848.webp   848w,
-              ./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-1090.webp 1090w
-            "
-            sizes="(max-width: 1280px) 364px, 364px"
-            alt="Photo d'un homme en costume'"
-            loading="lazy"
-          />
-          <img
-            data-gallery-tag="Entreprises"
-            class="gallery-item"
-            src="./assets/images/gallery/entreprise/femme-bureau-1/femme-bureau-608.webp"
-            srcset="
-              ./assets/images/gallery/entreprise/femme-bureau-1/femme-bureau-254.webp   254w,
-              ./assets/images/gallery/entreprise/femme-bureau-1/femme-bureau-608.webp   608w,
-              ./assets/images/gallery/entreprise/femme-bureau-1/femme-bureau-848.webp   848w,
-              ./assets/images/gallery/entreprise/femme-bureau-1/femme-bureau-1090.webp 1090w
-            "
-            sizes="(max-width: 1280px) 364px, 364px"
-            alt="Photo de femmes riant au bureau"
-            loading="lazy"
-          />
-          <img
-            data-gallery-tag="Mariages"
-            class="gallery-item"
-            src="./assets/images/gallery/mariage/mains-maries/mains-maries-608.webp"
-            srcset="
-              ./assets/images/gallery/mariage/mains-maries/mains-maries-304.webp   304w,
-              ./assets/images/gallery/mariage/mains-maries/mains-maries-608.webp   608w,
-              ./assets/images/gallery/mariage/mains-maries/mains-maries-848.webp   848w,
-              ./assets/images/gallery/mariage/mains-maries/mains-maries-1090.webp 1090w
-            "
-            sizes="(max-width: 1280px) 364px, 364px"
-            alt="Photo de mains de mariés les unes au dessus des autres"
-            loading="lazy"
-          />
-          <img
-            data-gallery-tag="Portrait"
-            class="gallery-item"
-            src="./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-448.webp"
-            srcset="
-              ./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-254.webp   254w,
-              ./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-448.webp   448w,
-              ./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-608.webp   608w,
-              ./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-728.webp   728w,
-              ./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-848.webp   848w,
-              ./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-1090.webp 1090w
-            "
-            sizes="(max-width: 1280px) 364px, 364px"
-            alt="portrait d'un homme les yeux fermés"
-            loading="lazy"
-          />
-          <img
-            data-gallery-tag="Mariages"
-            class="gallery-item"
-            src="./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-448.webp"
-            srcset="
-              ./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-254.webp   254w,
-              ./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-448.webp   448w,
-              ./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-608.webp   608w,
-              ./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-728.webp   728w,
-              ./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-848.webp   848w,
-              ./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-1090.webp 1090w
-            "
-            sizes="(max-width: 1280px) 364px, 364px"
-            alt="Photo d'un couple de marié riants"
-            loading="lazy"
-          />
-          <img
-            data-gallery-tag="Portrait"
-            class="gallery-item"
-            src="./assets/images/gallery/portraits/portrait-femme/portrait-femme-448.webp"
-            srcset="
-              ./assets/images/gallery/portraits/portrait-femme/portrait-femme-254.webp   254w,
-              ./assets/images/gallery/portraits/portrait-femme/portrait-femme-448.webp   448w,
-              ./assets/images/gallery/portraits/portrait-femme/portrait-femme-608.webp   608w,
-              ./assets/images/gallery/portraits/portrait-femme/portrait-femme-728.webp   728w,
-              ./assets/images/gallery/portraits/portrait-femme/portrait-femme-848.webp   848w,
-              ./assets/images/gallery/portraits/portrait-femme/portrait-femme-1090.webp 1090w
-            "
-            sizes="(max-width: 1280px) 364px, 364px"
-            alt="portrait d'une femme derrière un grillage"
-            loading="lazy"
-          />
-          <img
-            data-gallery-tag="Concert"
-            class="gallery-item"
-            src="./assets/images/gallery/concerts/artiste-sur-scene/artiste-sur-scene-608.webp"
-            srcset="
-              ./assets/images/gallery/concerts/artiste-sur-scene/artiste-sur-scene-254.webp   254w,
-              ./assets/images/gallery/concerts/artiste-sur-scene/artiste-sur-scene-608.webp   608w,
-              ./assets/images/gallery/concerts/artiste-sur-scene/artiste-sur-scene-848.webp   848w,
-              ./assets/images/gallery/concerts/artiste-sur-scene/artiste-sur-scene-1090.webp 1090w
-            "
-            sizes="(max-width: 1280px) 364px, 364px"
-            alt="Photo d'un artiste sur scène"
-            loading="lazy"
-          />
-          <img
-            data-gallery-tag="Entreprises"
-            class="gallery-item"
-            src="./assets/images/gallery/entreprise/femme-bureau-2/femme-bureau-2-608.webp"
-            srcset="
-              ./assets/images/gallery/entreprise/femme-bureau-2/femme-bureau-2-608.webp   608w,
-              ./assets/images/gallery/entreprise/femme-bureau-2/femme-bureau-2-848.webp   848w,
-              ./assets/images/gallery/entreprise/femme-bureau-2/femme-bureau-2-1090.webp 1090w
-            "
-            sizes="(max-width: 1280px) 364px, 364px"
-            alt="Photo d'une femme riant à son bureau"
+            sizes="(max-width: 1280px) 347px, 347px"
+            alt="Photo de Nina Carducci"
             loading="lazy"
           />
         </div>
-      </div>
+        <div id="about-me">
+          <h2 class="about-me__title">A propos de moi</h2>
+          <p class="about-me__introduction">
+            Devenir photographe était pour moi une évidence. Comme si j’y étais
+            prédestiné. Saisir un moment, une émotion, une situation, un
+            endroit, une lumière et les rendre immortels, voilà ce qui me fait
+            vibrer.
+          </p>
+          <p>
+            Nous passons notre vie à chercher le bonheur, et lorsque nous y
+            touchons, nous n’avons qu’une envie : le figer au travers de
+            photographies pour le savourer avec les personnes qui sont
+            importantes à nos yeux, ou le partager au plus grand nombre. C’est
+            ce que je vous propose : saisir ces merveilleux moments au travers
+            de mon regard, mon approche, ma technique. Rendre ces moments
+            immortels, afin que vous puissiez y puiser de l’amour, du bonheur,
+            de la tendresse et de lumière à chaque fois que vous poserez les
+            yeux sur vos photos.
+          </p>
+        </div>
+      </section>
+      <section id="gallery" aria-label="Galerie">
+        <h2 class="title">Portfolio</h2>
+        <div class="container py-3">
+          <div class="gallery" style="display: none" aria-hidden="true">
+            <img
+              data-gallery-tag="Concert"
+              class="gallery-item"
+              src="./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-448.webp"
+              srcset="
+                ./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-224.webp   224w,
+                ./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-448.webp   448w,
+                ./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-608.webp   608w,
+                ./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-728.webp   728w,
+                ./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-848.webp   848w,
+                ./assets/images/gallery/concerts/salle-de-concert/salle-de-concert-1090.webp 1090w
+              "
+              sizes="(max-width: 1280px) 364px, 364px"
+              alt="Photo d'une salle de concert"
+              loading="lazy"
+            />
+            <img
+              data-gallery-tag="Entreprises"
+              class="gallery-item"
+              src="./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-448.webp"
+              srcset="
+                ./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-224.webp   224w,
+                ./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-448.webp   448w,
+                ./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-608.webp   608w,
+                ./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-728.webp   728w,
+                ./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-848.webp   848w,
+                ./assets/images/gallery/entreprise/portrait-homme-costume/portrait-homme-costume-1090.webp 1090w
+              "
+              sizes="(max-width: 1280px) 364px, 364px"
+              alt="Photo d'un homme en costume'"
+              loading="lazy"
+            />
+            <img
+              data-gallery-tag="Entreprises"
+              class="gallery-item"
+              src="./assets/images/gallery/entreprise/femme-bureau-1/femme-bureau-608.webp"
+              srcset="
+                ./assets/images/gallery/entreprise/femme-bureau-1/femme-bureau-254.webp   254w,
+                ./assets/images/gallery/entreprise/femme-bureau-1/femme-bureau-608.webp   608w,
+                ./assets/images/gallery/entreprise/femme-bureau-1/femme-bureau-848.webp   848w,
+                ./assets/images/gallery/entreprise/femme-bureau-1/femme-bureau-1090.webp 1090w
+              "
+              sizes="(max-width: 1280px) 364px, 364px"
+              alt="Photo de femmes riant au bureau"
+              loading="lazy"
+            />
+            <img
+              data-gallery-tag="Mariages"
+              class="gallery-item"
+              src="./assets/images/gallery/mariage/mains-maries/mains-maries-608.webp"
+              srcset="
+                ./assets/images/gallery/mariage/mains-maries/mains-maries-304.webp   304w,
+                ./assets/images/gallery/mariage/mains-maries/mains-maries-608.webp   608w,
+                ./assets/images/gallery/mariage/mains-maries/mains-maries-848.webp   848w,
+                ./assets/images/gallery/mariage/mains-maries/mains-maries-1090.webp 1090w
+              "
+              sizes="(max-width: 1280px) 364px, 364px"
+              alt="Photo de mains de mariés les unes au dessus des autres"
+              loading="lazy"
+            />
+            <img
+              data-gallery-tag="Portrait"
+              class="gallery-item"
+              src="./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-448.webp"
+              srcset="
+                ./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-254.webp   254w,
+                ./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-448.webp   448w,
+                ./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-608.webp   608w,
+                ./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-728.webp   728w,
+                ./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-848.webp   848w,
+                ./assets/images/gallery/portraits/portrait-homme/homme-yeux-fermes-1090.webp 1090w
+              "
+              sizes="(max-width: 1280px) 364px, 364px"
+              alt="portrait d'un homme les yeux fermés"
+              loading="lazy"
+            />
+            <img
+              data-gallery-tag="Mariages"
+              class="gallery-item"
+              src="./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-448.webp"
+              srcset="
+                ./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-254.webp   254w,
+                ./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-448.webp   448w,
+                ./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-608.webp   608w,
+                ./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-728.webp   728w,
+                ./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-848.webp   848w,
+                ./assets/images/gallery/mariage/couple-de-maries-riant/couples-de-maries-riant-1090.webp 1090w
+              "
+              sizes="(max-width: 1280px) 364px, 364px"
+              alt="Photo d'un couple de marié riants"
+              loading="lazy"
+            />
+            <img
+              data-gallery-tag="Portrait"
+              class="gallery-item"
+              src="./assets/images/gallery/portraits/portrait-femme/portrait-femme-448.webp"
+              srcset="
+                ./assets/images/gallery/portraits/portrait-femme/portrait-femme-254.webp   254w,
+                ./assets/images/gallery/portraits/portrait-femme/portrait-femme-448.webp   448w,
+                ./assets/images/gallery/portraits/portrait-femme/portrait-femme-608.webp   608w,
+                ./assets/images/gallery/portraits/portrait-femme/portrait-femme-728.webp   728w,
+                ./assets/images/gallery/portraits/portrait-femme/portrait-femme-848.webp   848w,
+                ./assets/images/gallery/portraits/portrait-femme/portrait-femme-1090.webp 1090w
+              "
+              sizes="(max-width: 1280px) 364px, 364px"
+              alt="portrait d'une femme derrière un grillage"
+              loading="lazy"
+            />
+            <img
+              data-gallery-tag="Concert"
+              class="gallery-item"
+              src="./assets/images/gallery/concerts/artiste-sur-scene/artiste-sur-scene-608.webp"
+              srcset="
+                ./assets/images/gallery/concerts/artiste-sur-scene/artiste-sur-scene-254.webp   254w,
+                ./assets/images/gallery/concerts/artiste-sur-scene/artiste-sur-scene-608.webp   608w,
+                ./assets/images/gallery/concerts/artiste-sur-scene/artiste-sur-scene-848.webp   848w,
+                ./assets/images/gallery/concerts/artiste-sur-scene/artiste-sur-scene-1090.webp 1090w
+              "
+              sizes="(max-width: 1280px) 364px, 364px"
+              alt="Photo d'un artiste sur scène"
+              loading="lazy"
+            />
+            <img
+              data-gallery-tag="Entreprises"
+              class="gallery-item"
+              src="./assets/images/gallery/entreprise/femme-bureau-2/femme-bureau-2-608.webp"
+              srcset="
+                ./assets/images/gallery/entreprise/femme-bureau-2/femme-bureau-2-608.webp   608w,
+                ./assets/images/gallery/entreprise/femme-bureau-2/femme-bureau-2-848.webp   848w,
+                ./assets/images/gallery/entreprise/femme-bureau-2/femme-bureau-2-1090.webp 1090w
+              "
+              sizes="(max-width: 1280px) 364px, 364px"
+              alt="Photo d'une femme riant à son bureau"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="quote">
+          <figure>
+            <blockquote>
+              <p class="quote__text">
+                Un portrait n’est pas une ressemblance. Dès lors qu’une émotion
+                ou qu’un fait est traduit en photo, il cesse d’être un fait pour
+                devenir une opinion. L’inexactitude n’existe pas en
+                photographie. Toutes les photos sont exactes. Aucune d’elles
+                n’est la vérité.
+              </p>
+            </blockquote>
+            <figcaption class="quote__author">- Richard Avedon</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="services" aria-label="Services">
+        <h2 class="title">Mes services</h2>
+        <div class="container">
+          <div class="service">
+            <div class="service__description">
+              <h3>Shooting photo</h3>
+              <p>
+                Pour capturer vos moments les plus précieux et garder un
+                souvenir impérissable. Je me déplace en Île-de-France pour
+                réaliser vos photos
+              </p>
+            </div>
+            <div class="service__price">
+              <h4>350€/demi journée</h4>
+              <span>Matériel, déplacement inclus</span>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__description">
+              <h3>Retouches</h3>
+              <p>
+                Vous souhaitez retoucher vos photos pour un résultat
+                professionnel ? Bénéficier d’un rendu optimal pour vos
+                publications
+              </p>
+            </div>
+            <div class="service__price">
+              <h4>50€/photo</h4>
+              <span>2 AR par photo</span>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__description">
+              <h3>Album photos</h3>
+              <p>
+                Partagez avec vos proches et vos clients les photos des moments
+                partagés ensemble à travers un album photo personnalisé
+              </p>
+            </div>
+            <div class="service__price">
+              <h4>400€ album A4</h4>
+              <span>30 pages recto/verso</span>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="quote">
         <figure>
           <blockquote>
             <p class="quote__text">
-              Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
-              qu’un fait est traduit en photo, il cesse d’être un fait pour
-              devenir une opinion. L’inexactitude n’existe pas en photographie.
-              Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
+              De manière inconsciente, je crois, je guette un regard, une
+              expression, des traits ou une nostalgie capable de résumer ou plus
+              exactement de révéler une vie
             </p>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
-    </div>
-    <div id="services">
-      <h2 class="title">Mes services</h2>
-      <div class="container">
-        <div class="service">
-          <div class="service__description">
-            <h3>Shooting photo</h3>
+      <section id="contact" aria-label="Contact">
+        <div class="container">
+          <div class="form-container">
+            <h2>Une question ? Une demande de devis ?</h2>
             <p>
-              Pour capturer vos moments les plus précieux et garder un souvenir
-              impérissable. Je me déplace en Île-de-France pour réaliser vos
-              photos
+              N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
+              heures
             </p>
+            <form method="post">
+              <label for="nom">Nom</label>
+              <input type="text" name="nom" id="nom" />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <input type="submit" value="Envoyer" />
+            </form>
           </div>
-          <div class="service__price">
-            <h4>350€/demi journée</h4>
-            <span>Matériel, déplacement inclus</span>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service__description">
-            <h3>Retouches</h3>
-            <p>
-              Vous souhaitez retoucher vos photos pour un résultat professionnel
-              ? Bénéficier d’un rendu optimal pour vos publications
-            </p>
-          </div>
-          <div class="service__price">
-            <h4>50€/photo</h4>
-            <span>2 AR par photo</span>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service__description">
-            <h3>Album photos</h3>
-            <p>
-              Partagez avec vos proches et vos clients les photos des moments
-              partagés ensemble à travers un album photo personnalisé
-            </p>
-          </div>
-          <div class="service__price">
-            <h4>400€ album A4</h4>
-            <span>30 pages recto/verso</span>
+          <div class="picture right">
+            <img
+              src="./assets/images/camera-photo/camera-419.webp"
+              srcset="
+                ./assets/images/camera-photo/camera-419.webp 419w,
+                ./assets/images/camera-photo/camera-838.webp 838w
+              "
+              sizes="(max-width: 1280px) 339px, 339px"
+              loading="lazy"
+              alt="Photo d'un appareil photo"
+            />
           </div>
         </div>
-      </div>
-    </div>
-    <div class="quote">
-      <figure>
-        <blockquote>
-          <p class="quote__text">
-            De manière inconsciente, je crois, je guette un regard, une
-            expression, des traits ou une nostalgie capable de résumer ou plus
-            exactement de révéler une vie
-          </p>
-        </blockquote>
-        <figcaption class="quote__author">- Richard Avedon</figcaption>
-      </figure>
-    </div>
-    <div id="contact">
-      <div class="container">
-        <div class="form-container">
-          <h2>Une question ? Une demande de devis ?</h2>
-          <p>
-            N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
-          </p>
-          <form method="post">
-            <label for="nom">Nom</label>
-            <input type="text" name="nom" id="nom" />
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <input type="submit" value="Envoyer" />
-          </form>
-        </div>
-        <div class="picture right">
-          <img
-            src="./assets/images/camera-photo/camera-419.webp"
-            srcset="
-              ./assets/images/camera-photo/camera-419.webp 419w,
-              ./assets/images/camera-photo/camera-838.webp 838w
-            "
-            sizes="(max-width: 1280px) 339px, 339px"
-            loading="lazy"
-            alt="Photo d'un appareil photo"
-          />
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>

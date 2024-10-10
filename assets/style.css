@@ -155,6 +155,12 @@ body {
   font-size: 22px;
 }
 
+/* GESTION ALERTE DE CONTRASTE WAVE */
+.visually-hidden {
+  color: #000000 !important; /* Texte noir */
+  background-color: #ffffff !important; /* Fond blanc */
+}
+
 #services {
   margin: auto;
   background-color: #a8d5d8;
