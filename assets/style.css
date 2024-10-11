@@ -6,9 +6,11 @@ body {
   font-family: "Inter";
   font-style: normal;
 }
+
 .top-header {
   background-color: white;
   position: sticky;
+  /* position: fixed; */
   top: 0;
   z-index: 1000;
   display: flex;
@@ -31,6 +33,7 @@ body {
 
 .nav li {
   padding-inline: 10px;
+  font-size: 14px;
 }
 
 .nav a {
@@ -89,9 +92,11 @@ body {
   font-size: 14px;
 }
 
-#gallery {
-  /*	min-height: 100vh; */
+#about-me .about-me__introduction {
+  width: 60%;
+  font-size: 1rem;
 }
+
 .title {
   text-align: center;
   padding-block: 2em;
@@ -148,6 +153,8 @@ body {
   font-family: Spectral;
   font-style: italic;
   font-weight: 300;
+  font-size: calc(1.375rem + 1.5vw);
+  line-height: 1.2;
 }
 .quote__author {
   font-family: Spectral;
@@ -157,8 +164,8 @@ body {
 
 /* GESTION ALERTE DE CONTRASTE WAVE */
 .visually-hidden {
-  color: #000000 !important; /* Texte noir */
-  background-color: #ffffff !important; /* Fond blanc */
+  color: #000000 !important;
+  background-color: #ffffff !important;
 }
 
 #services {
@@ -219,6 +226,11 @@ body {
 .form-container {
   flex: 2;
 }
+
+.form-container h2 {
+  font-size: 1.75rem;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -259,6 +271,10 @@ input[type="submit"] {
   .about-me__title {
     margin-top: 0;
     margin-bottom: 1em;
+  }
+
+  #about-me .about-me__introduction {
+    width: 100%;
   }
   #about-me h6,
   #about-me p {
@@ -329,6 +345,7 @@ input[type="submit"] {
     flex-direction: column;
     padding-inline: 0;
   }
+
   .top-header .nav,
   .top-header .nav ul {
     width: 100%;

@@ -12,9 +12,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      />
+    </noscript>
     <link
       rel="preload"
       as="image"
@@ -100,26 +108,26 @@
   </head>
 
   <body>
+    <nav class="top-header">
+      <h1 class="name">Nina Carducci</h1>
+      <ul class="nav">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a
+            class="social-link"
+            href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+            target="_blank"
+            ><img
+              src="assets/images/instagram.png"
+              alt="Instagram de Nina Carducci"
+          /></a>
+        </li>
+      </ul>
+    </nav>
     <header id="header">
-      <nav class="top-header">
-        <h1 class="name">Nina Carducci</h1>
-        <ul class="nav">
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#gallery">Galerie</a></li>
-          <li><a href="#services">Service</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <a
-              class="social-link"
-              href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-              target="_blank"
-              ><img
-                src="assets/images/instagram.png"
-                alt="Instagram de Nina Carducci"
-            /></a>
-          </li>
-        </ul>
-      </nav>
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -231,7 +239,7 @@
               ./assets/images/nina-photo/nina-890.webp   890w,
               ./assets/images/nina-photo/nina-1120.webp 1120w
             "
-            sizes="(max-width: 1280px) 347px, 347px"
+            sizes="(min-width: 2020px) 560px, (min-width: 1200px) calc(30vw - 40px), (min-width: 660px) calc(46.15vw - 75px), calc(80vw - 51px)"
             alt="Photo de Nina Carducci"
             loading="lazy"
           />
